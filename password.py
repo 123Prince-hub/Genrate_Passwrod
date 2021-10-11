@@ -25,3 +25,13 @@ all = lower + upper + num + symbol
 temp = random.sample(all, length)
 password = "".join(temp)
 print(password)
+
+
+
+# ******************************* Method 3 ***********************************
+
+import random
+passlen = int(input("enter the length of password"))
+s="abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?"
+p =  "".join(random.sample(s,passlen ))
+print (p)
